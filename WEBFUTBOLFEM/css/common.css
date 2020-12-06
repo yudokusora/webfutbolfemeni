@@ -95,7 +95,7 @@ section {
   color: #8b0f06;
 }
 
-/* Footer links */
+
 
 .footer-distributed .footer-links {
   background: #2b2929;
@@ -129,8 +129,7 @@ section {
 
 .footer-distributed .footer-icons a {
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  height: 3vh;
   cursor: pointer;
   background-color: #33383b;
   border-radius: 2px;
@@ -144,7 +143,7 @@ section {
   margin-bottom: 5px;
 }
 
-/* Footer Right */
+
 
 .footer-distributed .footer-right {
   background: #2b2929;
@@ -183,19 +182,6 @@ section {
 
   width: 400px;
   padding: 18px;
-}
-
-.footer-distributed ::-webkit-input-placeholder {
-  color: #5c666b;
-}
-
-.footer-distributed ::-moz-placeholder {
-  color: #5c666b;
-  opacity: 1;
-}
-
-.footer-distributed :-ms-input-placeholder {
-  color: #5c666b;
 }
 
 .footer-distributed form input {
