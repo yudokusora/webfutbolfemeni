@@ -1,0 +1,102 @@
+html {
+  background-color: #2b2929;
+}
+
+body {
+  background-color: #201f1f;
+
+  font-family: Rockwell, Georgia, serif;
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0.15);
+}
+h1 {
+  background-color: tomato;
+  color: white;
+  text-align: center;
+  padding: 6px;
+}
+.column {
+  width: 50%;
+  float: left;
+  padding: 2%;
+  box-sizing: border-box;
+}
+.column {
+  padding: 3%;
+}
+/*clear-fix the parent of column because it collapsed!  */
+form:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* FORM STUFF BEGINS HERE */
+form {
+  font-size: 110%;
+}
+label {
+  display: block;
+  color: white;
+  margin: 16px 0 3px;
+}
+fieldset label {
+  display: inline-block;
+  font-size: 85%;
+  font-family: Calibri, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  border: solid 1px tan;
+  font-family: "Lucida Console", monospace;
+}
+textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+fieldset {
+  border: none;
+  margin: 20px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid tan;
+}
+legend {
+  color: white;
+  background-color: tan;
+  display: block;
+  width: 100%;
+  padding: 3px;
+}
+
+input[type="submit"] {
+  background-color: forestgreen;
+  color: white;
+  border: none;
+  padding: 6px 20px;
+  font-size: 110%;
+  border-radius: 10px;
+  font-family: Rockwell, georgia, serif;
+}
+
+input[type="reset"] {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 5% 0;
+  color: olive;
+  font-size: 10rem;
+}
+* {
+  color: red;
+}
