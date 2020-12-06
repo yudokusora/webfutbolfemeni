@@ -7,88 +7,112 @@
     <meta name="description" content="pagina de clasificacion logroño" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="../img/favicon.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="..\css\common.css" />
+    <link rel="stylesheet" href="../css/enquesta.css" />
   </head>
   <body>
-    <header id="top">
-      <img src="../img/iberdrola.png" alt="banner de iberdrola" height="400" />
+    <header class="top">
+      <img src="../img/iberdrola.png" alt="banner de iberdrola" />
+
+      <nav class="nav">
+        <ul>
+          <li>
+            <p class="pnav">PAGINAS</p>
+            <ul>
+              <a href="../index.html">Inicio</a>
+              <a href="classif.html">Clasificacion&nbsp;</a>
+              <a href="resultats.html">Resultats&nbsp;</a>
+              <a href="galeria.html">Galeria Audivisual</a>
+              <a href="satisfaccion.html">Enquesta</a>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <hr />
 
-      <br />
-      <div>
-        <a href="../index.html">Home&nbsp;</a>
-        <a href="./resultats.html">Resultats&nbsp;</a>
-        <a href="./classif.html">Clasificaccio&nbsp;</a>
-        <a href="./galeria.html">Galeria Audivisual</a>
-      </div>
-    </nav>
     <main>
-      <br />
-      <br />
-      <center>
-        <form action="../validaenquesta.php" method="get">
-          <label for="email" required>EMAIL:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value="example@example.cat"
-          />
-          <br />
-          <br />
-          <label for="nom">Nom Complet:</label>
-          <input type="text" id="nom" name="nom" value="Jhon Doe" required />
-          <br />
-          <br />
-          <label for="number">Puntuacio:</label>
-          <input type="number" id="number" min="0" max="5" required />
-          <br />
-          <br />
-          <label for="nota">Nota:</label>
-          <select name="nota" id="nota" required>
-            <option value="1">excelente</option>
-            <option value="2">notable</option>
-            <option value="3">regular</option>
-            <option value="4">Dolenta</option>
-          </select>
-          <br />
-          <br />
-          <label for="favcolor">Color Favorito:</label>
-          <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+      <form action="../validaenquesta.php" method="get">
+        <label for="email" required>EMAIL:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.cat"
+        />
 
-          <br />
-          <br />
-          <label for="Observaciones">Observaciones:</label>
-          <br />
-          <textarea id="Observaciones" name="Observaciones" rows="10" cols="40">
-Escribe aquí tus Observaciones</textarea
-          >
-          <br />
-          <button type="submit">Enviar</button>
-          <button type="reset">Reset</button>
-        </form>
-      </center>
+        <label for="nom">Nom Complet:</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          placeholder="Jhon Doe"
+          required
+        />
+
+        <label for="number">Puntuacio:</label>
+        <input type="number" id="number" min="0" max="5" required />
+
+        <label for="nota">Nota:</label>
+        <select name="nota" required>
+          <option value="1">excelente</option>
+          <option value="2">notable</option>
+          <option value="3">regular</option>
+          <option value="4">Dolenta</option>
+        </select>
+
+        <label for="favcolor">Color Favorito:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+
+        <label for="Observaciones">Observaciones:</label>
+
+        <textarea
+          id="Observaciones"
+          name="Observaciones"
+          rows="10"
+          cols="40"
+          placeholder="Escribe aquí tus Observaciones"
+        ></textarea>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+      </form>
     </main>
-    <footer>
-      <div>
-        <span>© logroño 2020&nbsp;&nbsp;</span>
-        <span
-          ><a href="mailto:yudokusora@gmail.com"
-            ><img src="../img/mail.ico" alt="contacto" width="35"
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>EDF<span>LOGROÑO</span></h3>
+
+        <p class="footer-links">
+          <a href="infogeneral.html">General</a>
+          ·
+          <a href="planter.html">Planter</a>
+        </p>
+
+        <p class="footer-company-name">Web futbol femeni © 2020</p>
+
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/edflogrono/?hl=es" target="_blank"
+            ><img src="../img/instagram.png" alt="instagram"
           /></a>
-        </span>
-        <a href="https://www.instagram.com/edflogrono/?hl=es" target="_blank"
-          ><img src="../img/instagram.png" alt="instagram" width="30"
-        /></a>
-        <a
-          href="https://www.facebook.com/pages/category/School-Sports-Team/Edf-Logro%C3%B1o-1613091752266383/"
-          target="_blank"
-          ><img src="../img/facebook.png" alt="facebook" width="31"
-        /></a>
+
+          <a
+            href="https://www.facebook.com/pages/category/School-Sports-Team/Edf-Logro%C3%B1o-1613091752266383/"
+            target="_blank"
+            ><img src="../img/facebook.png" alt="facebook"
+          /></a>
+          <a href="mailto:yudokusora@gmail.com"
+            ><img src="../img/mail.png" alt="mail"
+          /></a>
+        </div>
       </div>
-      <br />
-      <h2><a href="#top">Torna al principi</a></h2>
+
+      <div class="footer-right">
+        <p>Contactanos</p>
+
+        <form action="#" method="post">
+          <input type="text" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Mensaje"></textarea>
+          <button>Mandar</button>
+        </form>
+      </div>
     </footer>
   </body>
 </html>

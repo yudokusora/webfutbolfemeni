@@ -7,30 +7,35 @@
     <meta name="description" content="pagina de clasificacion logroño" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="../img/favicon.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="..\css\common.css" />
+    <link rel="stylesheet" type="text/css" href="..\css\classif.css" />
   </head>
   <body>
-    <header id="top">
-      <img src="../img/iberdrola.png" alt="banner de iberdrola" height="400" />
+    <header class="top">
+      <img src="../img/iberdrola.png" alt="banner de iberdrola" />
+
+      <nav class="nav">
+        <ul>
+          <li>
+            <p class="pnav">PAGINAS</p>
+            <ul>
+              <a href="../index.html">Inicio</a>
+              <a href="classif.html">Clasificacion&nbsp;</a>
+              <a href="resultats.html">Resultats&nbsp;</a>
+              <a href="galeria.html">Galeria Audivisual</a>
+              <a href="satisfaccion.html">Enquesta</a>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <hr />
 
-      <br />
-      <div>
-        <a href="../index.html">Home&nbsp;</a>
-
-        <a href="./resultats.html">Resultats&nbsp;</a>
-        <a href="./galeria.html">Galeria Audivisual</a>
-        <a href="./satisfaccion.html">Enquesta</a>
-      </div>
-    </nav>
     <main>
-      <br />
       <div>
-        <table border="1">
+        <table class="center">
           <tr>
             <th>Puesto</th>
-            <th>EQUIPO</th>
+            <th>Equipo</th>
           </tr>
           <tr>
             <td>1</td>
@@ -63,25 +68,42 @@
         </table>
       </div>
     </main>
-    <footer>
-      <div>
-        <span>© logroño 2020&nbsp;&nbsp;</span>
-        <span
-          ><a href="mailto:yudokusora@gmail.com"
-            ><img src="../img/mail.ico" alt="contacto" width="35"
-          /></a>
-        </span>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>EDF<span>LOGROÑO</span></h3>
 
-        <a href="https://www.instagram.com/edflogrono/?hl=es" target="_blank"
-          ><img src="../img/instagram.png" alt="instagram" width="30"
-        /></a>
-        <a
-          href="https://www.facebook.com/pages/category/School-Sports-Team/Edf-Logro%C3%B1o-1613091752266383/"
-          target="_blank"
-          ><img src="../img/facebook.png" alt="facebook" width="31"
-        /></a>
-        <br />
-        <h2><a href="#top">Torna al principi</a></h2>
+        <p class="footer-links">
+          <a href="infogeneral.html">General</a>
+          ·
+          <a href="planter.html">Planter</a>
+        </p>
+
+        <p class="footer-company-name">Web futbol femeni © 2020</p>
+
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/edflogrono/?hl=es" target="_blank"
+            ><img src="../img/instagram.png" alt="instagram"
+          /></a>
+
+          <a
+            href="https://www.facebook.com/pages/category/School-Sports-Team/Edf-Logro%C3%B1o-1613091752266383/"
+            target="_blank"
+            ><img src="../img/facebook.png" alt="facebook"
+          /></a>
+          <a href="mailto:yudokusora@gmail.com"
+            ><img src="../img/mail.png" alt="mail"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p>Contactanos</p>
+
+        <form action="#" method="post">
+          <input type="text" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Mensaje"></textarea>
+          <button>Mandar</button>
+        </form>
       </div>
     </footer>
   </body>

@@ -8,65 +8,77 @@
     <meta name="description" content="pagina principal de logroño femenino" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header id="top">
-      <img src="./img/iberdrola.png" alt="banner de iberdrola" height="400" />
-      <hr />
-    </header>
-    <nav>
-      <div>
-        <a href="./web/classif.html">Clasificaccio&nbsp;</a>
-        <a href="./web/resultats.html">Resultats&nbsp;</a>
-        <a href="./web/galeria.html">Galeria Audivisual</a>
-        <a href="./web/satisfaccion.html">Enquesta</a>
-      </div>
-    </nav>
-    <main>
-      <span>
-        <img src="./img/logo.png" alt="logo de logroño" />
+    <header class="top">
+      <img src="./img/iberdrola.png" alt="banner de iberdrola" />
 
-        <a
-          href="https://www.iberdrola.com/sala-comunicacion/noticias"
-          target="_blank"
-        >
-          <img
-            src="./img/iberdrola2.png"
-            alt="iberdrola noticias"
-            width="300"
-          />
-        </a>
-        <br />
-      </span>
-      <hr />
-
-      <nav>
-        <a href="./web/infogeneral.html">General</a>
-        <a href="./web/planter.html">Planter</a>
+      <nav class="nav">
+        <ul>
+          <li>
+            <p class="pnav">PAGINAS</p>
+            <ul>
+              <a href="./index.html">Inicio</a>
+              <a href="./web/classif.html">Clasificacion&nbsp;</a>
+              <a href="./web/resultats.html">Resultats&nbsp;</a>
+              <a href="./web/galeria.html">Galeria Audivisual</a>
+              <a href="./web/satisfaccion.html">Enquesta</a>
+            </ul>
+          </li>
+        </ul>
       </nav>
+    </header>
+
+    <main class="center">
+      <img src="./img/logo.png" alt="logo de logroño" />
+
+      <a
+        href="https://www.iberdrola.com/sala-comunicacion/noticias"
+        target="_blank"
+      >
+        <img src="./img/iberdrola2.png" alt="iberdrola noticias" />
+      </a>
     </main>
 
-    <footer>
-      <div>
-        <span>© logroño 2020&nbsp;&nbsp;</span>
-        <span
-          ><a href="mailto:yudokusora@gmail.com"
-            ><img src="./img/mail.ico" alt="contacto" width="35"
-          /></a>
-        </span>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>EDF<span>LOGROÑO</span></h3>
 
-        <a href="https://www.instagram.com/edflogrono/?hl=es" target="_blank"
-          ><img src="./img/instagram.png" alt="instagram" width="30"
-        /></a>
-        <a
-          href="https://www.facebook.com/pages/category/School-Sports-Team/Edf-Logro%C3%B1o-1613091752266383/"
-          target="_blank"
-        >
-          <img src="./img/facebook.png" alt="facebook" width="31"
-        /></a>
+        <p class="footer-links">
+          <a href="./web/infogeneral.html">General</a>
+          ·
+          <a href="./web/planter.html">Planter</a>
+        </p>
+
+        <p class="footer-company-name">Web futbol femeni © 2020</p>
+
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/edflogrono/?hl=es" target="_blank"
+            ><img src="./img/instagram.png" alt="instagram"
+          /></a>
+
+          <a
+            href="https://www.facebook.com/pages/category/School-Sports-Team/Edf-Logro%C3%B1o-1613091752266383/"
+            target="_blank"
+            ><img src="./img/facebook.png" alt="facebook"
+          /></a>
+          <a href="mailto:yudokusora@gmail.com"
+            ><img src="./img/mail.png" alt="mail"
+          /></a>
+        </div>
       </div>
-      <br />
-      <h2><a href="#top">Torna al principi</a></h2>
+
+      <div class="footer-right">
+        <p>Contactanos</p>
+
+        <form action="#" method="post">
+          <input type="text" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Mensaje"></textarea>
+          <button>Mandar</button>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
