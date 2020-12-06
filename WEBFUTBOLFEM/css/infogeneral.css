@@ -59,6 +59,6 @@ details[open] > div > img {
   animation-delay: 0.15s;
   animation-fill-mode: forwards;
 }
-img {
+aside img {
   margin-top: 5vh;
 }
